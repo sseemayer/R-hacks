@@ -4,3 +4,5 @@ This is a collection of useful scripts that you can <code>source</code> into you
 
 * <code>color.R</code> - Random color generation for graphs
 * <code>huge_matrix.R</code> - Huge matrices
+
+Fork me on GitHub and contribute your own scripts!

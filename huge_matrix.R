@@ -20,6 +20,10 @@ setMethod("initialize", "HugeMatrix", function(.Object, fill, ncol, nrow, max.el
 	.Object
 })
 
+setMethod("show", "HugeMatrix", function(object) {	
+	cat(sprintf("HugeMatrix of dimensions [%d x %d], split into %d columns each (%d matrices) \n", object@nrow, object@nrow, object@matrix.cols, length(object@data)))
+})
+
 huge.matrix = function(fill, nrow, ncol, max.elements.per.matrix=.Machine$integer.max) {
 	new("HugeMatrix", fill=fill, nrow=nrow, ncol=ncol, max.elements.per.matrix=max.elements.per.matrix)	
 }
